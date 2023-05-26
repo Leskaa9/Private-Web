@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Aoboshi+One&family=Asap+Condensed:wght@600&family=Bruno+Ace&family=Days+One&family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@300;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #242424;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  border-bottom: 1px solid white;
+  backdrop-filter: blur(3px);
+  position: fixed;
+}
+
+nav .logo {
+  font-family: 'Bruno Ace', serif;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 80px;
+  letter-spacing: 1+
+  px;
+  padding: 0 50px;
+  color: white;
+}
+
+nav span {
+  color: #2cd3e1;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul .active a {
+  color: #242424;
+  background-color: white;
+}
+
+nav ul .active a:hover {
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 17px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  background-color: black;
+}
+
+.btn {
+  float: right;
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  margin-right: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  nav .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 565px) {
+  .btn {
+    display: block;
+  }
+  ul {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 70px;
+    line-height: 30px;
+    display: block;
+  }
+}
+
+#Home .Home {
+  background: linear-gradient(to left, #2cd3e1, #f2bed1);
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+#Home .Home .Home-Content {
+  padding-top: 270px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#Home .Home .Home-Content h1 {
+  font-size: 60px;
+  color: #f9f5f6;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#Home .Home .Home-Content span {
+  color: #feff86;
+}
+
+#Home .Home .Home-Content button {
+  padding: 17px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd93d;
+  color: #242424;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#About {
+  width: 100%;
+  background: url("About.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#About .About h1 {
+  color: #2cd3e1;
+  font-family: 'Aoboshi One', sans-serif  ;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px black;
+  letter-spacing: 8px;
+  padding-top: 1rem;
+}
+
+#About .About h2 {
+  color: #777;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0px black;
+  margin-bottom: 4.9rem;
+}
+
+#About .About .image img {
+  height: 40vh;
+  border-radius: 50%;
+}
+
+#About .About p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 7rem;
+}
+
+#About .About button {
+  width: 15%;
+  height: 7vh;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffd93d;
+  transition: all .5s ease;
+  margin-bottom: 2rem;
+}
+
+#About .About button:hover {
+  border: 2px solid #ffd93d;
+  color: #ffd93d;
+  background-color: transparent;
+}
+
+#Portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, #feff86,#2cd3e1);
+  width: 100%;
+  height: 100vh;
+  padding: 0 4rem;
+}
+
+#Portfolio .girl-desk h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Asap Condensed', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px black;
+  color: #FFD95A;
+}
+
+#Portfolio .girl-desk h2 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Asap Condensed', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px black;
+  color: #FC4F00;
+  margin-bottom: 1rem;
+}
+
+#Portfolio .girl-desk span {
+  color: white;
+}
+
+#Portfolio .girl-desk p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #fff;
+  text-shadow: 1px 1px 0px black;
+  text-align: left;
+  margin-right: 9rem;
+  padding: 0 5px;
+}
+
+#Portfolio .social-media {
+  width: 47%;
+  padding: 17px;
+  border: 3px solid #FC4F00;
+  border-radius: 50px;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#Portfolio .social-media i {
+  padding: 0 1rem;
+  color: #FC4F00;
+  text-shadow: 1px 1px 0px black;
+  transition: all .5s ease;
+}
+
+#Portfolio .social-media i:hover {
+  color: white;
+}
+
+#Portfolio .girl img {  
+  float: right;
+}
+
+#Services {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: linear-gradient(to left, #D4FAFC, #2A2F4F);
+}
+
+#Services .Logo h1 {
+  font-size: 60px;
+  font-family: 'Bruno Ace', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #D4FAFC;
+  text-shadow: 1px 1px 0px black;
+  padding: 80px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.flex .box1 {
+  background-color: #2A2F4F;
+  height: 60vh;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 0 30px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.flex .box1 i {
+  margin-top: 40px;
+  font-size: 60px;
+  color: #D4FAFC;
+}
+
+.flex .box1 h1 {
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  margin: 20px;
+}
+
+.flex .box1 p {
+  font-family: sans-serif;
+  line-height: 25px;
+  color: white;
+}
+
+.flex .box1 button {
+  width: 40%;
+  height: 8vh;
+  border: none;
+  border-radius: 5px;
+  color: #242424;
+  font-size: 15px;
+  background-color: #D4FAFC;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all .5s ease;
+}
+
+.flex .box1 button:hover {
+  background-color: transparent;
+  border: 2px solid #D4FAFC;
+  color: white;
+}
+
+.flex .box2 {
+  background-color: #2A2F4F;
+  height: 60vh;
+  border-radius: 10px;
+  margin-right: 20px;
+  transform: rotate(-2deg);
+  padding: 0 30px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.flex .box2 i {
+  margin-top: 40px;
+  font-size: 60px;
+  color: #D4FAFC;
+}
+
+.flex .box2 h1 {
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  margin: 20px;
+}
+
+.flex .box2 p {
+  font-family: sans-serif;
+  line-height: 25px;
+  color: white;
+}
+
+.flex .box2 button {
+  width: 40%;
+  height: 8vh;
+  border: none;
+  border-radius: 5px;
+  color: #242424;
+  font-size: 15px;
+  background-color: #D4FAFC;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-top: 20px;
+}
+
+.flex .box2 button:hover {
+  background-color: transparent;
+  border: 2px solid #D4FAFC;
+  color: white;
+}
+
+.flex .box3 {
+  background-color: #2A2F4F;
+  height: 60vh;
+  padding: 0 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.flex .box3 i {
+  margin-top: 40px;
+  font-size: 60px;
+  color: #D4FAFC;
+}
+
+.flex .box3 h1 {
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  margin: 20px;
+}
+
+.flex .box3 p {
+  font-family: sans-serif;
+  line-height: 25px;
+  color: white;
+}
+
+.flex .box3 button {
+  width: 40%;
+  height: 8vh;
+  border: none;
+  border-radius: 5px;
+  color: #242424;
+  font-size: 15px;
+  background-color: #D4FAFC;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.flex .box3 button:hover {
+  background-color: transparent;
+  border: 2px solid #D4FAFC;
+  color: white;
+}
+
+#Contact {
+  background: url('https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-preview.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh ;
+}
+
+#Contact .intro {
+  font-size: 5rem;
+  font-family: 'Bruno Ace', sans-serif;
+  text-align: center;
+  color: #F8F6F4;
+  position: relative;
+  top: 60px;
+}
+
+#Contact .Contact-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+  font-family: sans-serif;
+}
+
+#Contact .Contact {
+  border-top: 2px solid rgba(255,255,255,0.5);
+  border-left: 2px solid rgba(255,255,255,0.5);
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  border-right: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  height: 63.5vh;
+}
+
+#Contact .Contact h1 {
+  font-family: sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+} 
+
+#Contact .Contact i {
+  font-size: 20px;
+  color: white;
+}
+
+#Contact .Contact span {
+  font-size: 15px;
+  color: grey;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+#Contact .Contact p {
+  font-size: 15px;
+  color: white;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#Contact .write {
+  background-color: transparent;
+  width: 65%;
+  height: 63.5vh;
+  padding: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 0px 10px 10px 1px;
+}
+
+#Contact .write h1 {
+  color: white;
+  text-align: center;
+}
+
+#Contact .write form .name {
+  width: 100%;
+  height: 6vh;
+  font-size: 13px;
+  font-family: sans-serif;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  color: white;
+  outline: none;  
+}
+
+#Contact .write form .email {
+  width: 100%;
+  height: 6vh;
+  font-size: 13px;
+  font-family: sans-serif;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  color: white;
+  outline: none;
+}
+
+#Contact .write form .subject {
+  width: 100%;
+  height: 6vh;
+  font-size: 13px;
+  font-family: sans-serif;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  margin-bottom: 10px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  color: white;
+  outline: none;
+}
+
+#Message {
+  resize: none;
+  width: 440px;
+  height: 100px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  color: white;
+  outline: none;
+}
+
+#Contact .write form input::placeholder {
+  color: white;
+}
+
+#Contact .write form textarea::placeholder {
+  color: white;
+}
+
+#Contact .write button {
+  width: 40%;
+  height: 6vh;
+  font-family: sans-serif;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a62ea;
+  margin: 0 140px;
+  cursor: pointer;
+}
+
+#Contact .write i {
+  float: right;
+  padding: 0 10px;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 35px;
+}
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
